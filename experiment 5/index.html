@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            Chatbot
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">Hello! How can I help you?</div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <script>
+        function sendMessage() {
+            let input = document.getElementById("userInput");
+            let message = input.value.trim();
+            let chatBox = document.getElementById("chatBox");
+
+            if (message !== "") {
+                let userMsg = document.createElement("div");
+                userMsg.className = "user-message";
+                userMsg.innerText = message;
+                chatBox.appendChild(userMsg);
+
+                input.value = "";
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+                setTimeout(() => {
+                    let botMsg = document.createElement("div");
+                    botMsg.className = "bot-message";
+                    botMsg.innerText = "I'm just a demo bot!";
+                    chatBox.appendChild(botMsg);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 500);
+            }
+        }
+
+        document.getElementById("userInput").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                sendMessage();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

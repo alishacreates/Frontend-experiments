@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <p id="logo">Logo</p>
-         <div id="nav-buttons">
-             <button>About</button>
-             <button>Skills</button>
-             <button>Services</button>
-             <button>Contact</button>
-         </div>
-    </nav>
-    <div id="about">
-        Welcome to my Portoflio website. 
+
+  <nav>
+    <div id="logo">Logo</div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <div id="nav-buttons">
+      <a href="#about"><button>About</button></a>
+      <a href="#skills"><button>Skills</button></a>
+      <a href="#services"><button>Services</button></a>
+      <a href="#contact"><button>Contact</button></a>
     </div>
-    <div id="image">
-        MY IMAGE
+  </nav>
+
+  <div id="content">
+    <div class="content" id="about">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio website. I’m a computer science student who enjoys
+        building clean, responsive web interfaces and learning step by step
+        through real projects.
+      </p>
     </div>
+
+    <div class="content" id="image">
+      <img src="image.jpg" alt="Profile image">
+    </div>
+  </div>
+
+
+  <div id="skills" class="skillcontent">
+    <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">C</div>
+    <div class="skill-box">Python</div>
+  </div>
+</div>
+
+  <div id="services" class="content">
+    <h2>Services</h2>
+    <p>Web design, responsive layouts, UI development</p>
+  </div>
+
+  <div id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
 
 </body>
 </html>
+
+

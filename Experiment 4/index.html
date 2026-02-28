@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAB 4</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome (correct way) -->
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <nav>
+    <p class="logo">Logo</p>
+
+    <div class="nav-buttons">
+      <p>Home</p>
+      <p>About</p>
+      <p>Services</p>
+      <p>Products</p>
+      <p>Contact Us</p>
+    </div>
+
+    <div class="hamburger">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <div class="mobile-menu">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Products</p>
+            <p>Contact Us</p>
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+  </div>
+
+    </div>
+
+    <div class="login-signup">
+      <button>Login</button>
+      <button>Signup</button>
+    </div>
+  </nav>
+
+  <section id="hero-image">
+    <img src="image.jpg" alt="Hero Image" />
+  </section>
+
+  <section class="contact-section">
+    <form class="contact-form">
+      <h2>Contact Us</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+</body>
+</html>
