@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1: Basic Profile page</title>
-    <!-- Create a webpage with:
+     <style>
+        body{
+            background-color: brown;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #task1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            box-shadow: 1px 2px 10px black;
+            background-color: black;
+        }
+        #task1 > *{
+            margin: 10px;
+        }
+        img{
+            border-radius: 10%;
+        }
 
-Your name (heading)
-A short paragraph about you
-Your image
-A list of your skills
-
-👉 Add:
-
-background color
-center alignment
-some spacing -->
+     </style>
 </head>
 <body>
-    
+    <section id="task1">
+    <h1>Alisha</h1>
+    <p>I am Alisha, i am a CSE student, i like to code.</p>
+    <img src="main.jpeg" alt="picture" width="200px">
+    <h3>Skills</h3>
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+    </section>
 </body>
 </html>
