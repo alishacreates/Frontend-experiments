@@ -1,0 +1,18 @@
+Experiment
+1 Write a program to create a simple webpage using HTML.
+2 Write a program to create a website using HTML CSS and
+JavaScript.
+3 Write a program to build a Chat module using HTML CSS and
+JavaScript.
+4 Write a program to create a simple calculator Application using
+React JS
+5 Write a program to create a voting application using React JS
+6 Write a program to create and Build a Password Strength Check
+using Jquery
+7 Write a program to create and Build a star rating system using
+Jquery
+8 Create a Simple Login form using React JS
+9 Using the CMS users must be able to design a web page using the
+drag and drop method
+10 Create a project on Grocery delivery application
+11 Connecting our TODO React js Project with Firebase
