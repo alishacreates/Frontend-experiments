@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+.profile{
+    display: inline-flex;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid blue;
+}
+img{
+    border-radius: 700px;
+}
+.chat-field{
+    
+}
